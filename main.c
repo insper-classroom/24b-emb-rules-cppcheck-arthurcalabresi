@@ -5,13 +5,11 @@
 
 int multiplyNumbers(int x, int y) {
     int product = x * y;
+    return product;
 }
 
 int main(void) {
-    int a, b; //uninitvar, legacyUninitvar
-    a = 5;
-    b = 5;
-    int result;
+    int a, b = 5; //uninitvar, legacyUninitvar
     int result = multiplyNumbers(a, b);
 
     int arr[NUM_ELEMENTS];
